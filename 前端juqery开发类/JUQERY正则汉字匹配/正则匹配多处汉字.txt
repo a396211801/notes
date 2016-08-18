@@ -1,0 +1,4 @@
+function isChinaName(name)  {
+		var pattern = /^[\u4e00-\u9fa5]{2,8}[省][\u4e00-\u9fa5]{2,8}[市][\u4e00-\u9fa5]{2,20}[支行]$/;
+		return pattern.test(name);
+	}

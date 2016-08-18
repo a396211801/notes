@@ -1,0 +1,9 @@
+解决CENTOS7虚拟机更改静态IP无法启动
+
+在linuxman的编辑中，未出现问题。反复的查看原因未果，后查明是虚拟机所致。
+1.在开启网络时，有错误提示：Restarting network (via systemctl): Job for network.service failed. See 'systemctl status network.service' and 'journalctl -xn' for details.
+2.根据提示执行： systemctl status network.service 
+提示错误日志：15:30:10 localhost.localdomain systemd[1]:Failed to start LSB: Bring up/down networking.
+3.用 ip addr 命令查看MAC地址（ 此行 link/ether 00:5c:33:2e:dd:10) 与文件 /etc/sysconfig/network-scripts/ifcfg-* 中显示的（此行 HWADDR=00:e3:21:3d:5d:ee) 时行对比时发现不一致。
+4.注释掉 /etc/sysconfig/netwrok-scripts/ifcfg-* 中 HWADDR= * :*:*:*:*:* 此行
+5. 在下面更改为 HWADDR=00:5C:33:2E:DD:10 (也就是用IP ADDR 命令所查到的MAC）
