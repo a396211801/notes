@@ -1,0 +1,4 @@
+function isChinaName(name)  {
+		var pattern = /^[\u4e00-\u9fa5]{2,8}[ʡ][\u4e00-\u9fa5]{2,8}[shi][\u4e00-\u9fa5]{2,20}[zhihang]$/;
+		return pattern.test(name);
+	}
