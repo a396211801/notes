@@ -6,6 +6,11 @@
  * 聚合时候注意一下几点
  * 一、$sort排序时候排序尽量int类型。大多类型会循环多次而导致拖延查询时长
  * 二、分页时候注意skip和limit字段的顺序位置
+ * 三、字段特殊时请给特殊字段添加指定编码
+ *
+ * 'domain' => isset($v['_id']['domain']) ? utf8_encode($v['_id']['domain']) : '', 给指定字段添加utf-8编码
+ *
+ *
  * *******聚合案列
  *
  *$list = $this->_mongo->$db->$table->aggregate(
