@@ -47,6 +47,19 @@ function demo()
  * */
 function demo1()
 {
+}
+/**
+ *
+ * mongo 批量添加方法事例
+ *
+ *
+ * $this->_mongo->$db->$tables->batchInsert($insert_data);
+ *
+ *
+ *
+ * */
+function demo2()
+{
 
 }
 
