@@ -22,7 +22,7 @@
  *
  *
  * centOS7 liunx 下安装yaf
- *Yaf 安装
+ * Yaf 安装
  *
  *下载: wget http://pecl.php.net/get/yaf-2.2.9.tgz 注意PHP版本跟yaf版本有兼容性
  *
@@ -71,7 +71,6 @@
  *etc/init.d/php-fpm restart
  *
  *7.查看phpinfo()
- *
  *
  *
  *
