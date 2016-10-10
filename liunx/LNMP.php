@@ -9,16 +9,6 @@
  *
  *yum remove mysql mysql-servaer
  *
- * -----------------Linux 启动、关闭、重启网络服务的两种方式 ---------------------
- *
- *一种是可以使用service脚本来调度,如:
-    service  服务名  start
-    service  服务名  stop
-    service  服务名  restart
-    一种是直接执行某个服务自己的管理脚本，以smb服务为例
-    /etc/init.d/smb  start
-    /etc/init.d/smb  stop
-    /etc/init.d/smb  restart
  *include enable-php.conf;
  *include fastcgi.conf;
  * # fastcgi_param PATH_INFO
@@ -49,6 +39,40 @@
  *
  *3、开始编译(注意--with-php-config参数)
  *./configure --with-php-config=/usr/local/php/bin/php-config
+ *
+ *
+ * 在Linux下编译PHP的Memcached扩展的时候遇到一些问题，在这里总结一下解决的过程。
+
+        一开始尝试用PECL快速安装扩展，在编译的过程中提示需要libmemcached依赖库，
+ *        于是用yum安装了libmemcached和libmemcached-devel，但是还是没安装成功，
+ *      去PHP官网的Memcached扩展需求页看了一下，libmemcached依赖库的版本需要大于
+ *      等于1.0.0，查了一下本机该库的版本得到如下提示：
+
+
+        yum list installed |grep libmemcached
+        libmemcached.i686                    0.31-1.1.el6              @base
+        libmemcached-devel.i686              0.31-1.1.el6              @base
+        libmemcached 版本是0.31-1.1，并且提示已经是最新了，并不太明白这一点。
+ *      于是按照官网的提示在这里下载了最新的版本1.0.18并在本地安装编译，指定路径在/usr/local/libmemcached
+
+        重新使用PECL安装并制定libmemcached路径后会出现如下提示：
+
+
+        configure: error: no, sasl.h is not available. Run configure with --disable-memcached-sasl to disable this check
+        于是我决定手动编译了，提示很简单，加上 --disable-memcached-sasl即可，接下来的过程都很顺利了。
+
+        在PECL官网下载memcached扩展源码并解压进入生成目录
+        执行命令/usr/local/php/bin/phpize生成编译文件，PHP 路径因安装路径而异
+        执行命令./configure --with-php-config=/usr/local/php/bin/php-config
+ *              --with-libmemcached-dir=/usr/local/libmemcached --disable-memcached-sasl
+        执行命令make && make install 会在PHP扩展目录生成memcached.so
+        在php.ini文件添加extension=memcached.so 即可
+ *
+ *
+ *
+ *
+ *
+ *
  *
  *4、make
  *
@@ -156,5 +180,113 @@ class deome{
          * */
     }
 
+
+    /**
+     * 扩展配置文件下载地址
+     * */
+    public function add(){
+        /**
+         *
+        autoconf-2.68.tar.gz
+        http://ftp.gnu.org/gnu/autoconf/
+
+        eaccelerator-0.9.6.tar.bz2 (PHP扩展)
+        http://bart.eaccelerator.net/source/
+
+        freetype-2.2.1.tar.gz
+        GD的字体库
+        http://sourceforge.net/projects/freetype/files/
+
+        gd-2.0.33.tar.gz
+        GD图形库
+        http://download.chinaunix.net/download.php?id=6665&ResourceID=3479
+
+        ImageMagick (PHP扩展)
+
+
+        http://www.imagemagick.org
+        ftp://mirror.aarnet.edu.au/pub/imagemagick/
+        ImageMagick是一套功能强大、稳定而且免费的工具集和开发包，可以用来读、写和处理超过89种基本格式的图片文件，包括流行的TIFF, JPEG, GIF, PNG, PDF以及PhotoCD等格式。
+
+
+        imagick-2.2.2.tgz (PHP扩展)
+        http://pecl.php.net/get/imagick-2.2.2.tgz
+
+        jpegsrc.v6b.tar.gz
+        http://down.51cto.com/data/118858
+
+        libiconv-1.13.1.tar.gz (PHP支持库)
+        http://ftp.gnu.org/gnu/libiconv/
+
+        libmcrypt-2.5.8  (PHP支持库)
+        http://sourceforge.net/projects/mcrypt/files/
+
+        libpng-1.2.8.tar.gz
+        http://sourceforge.net/projects/libpng/files/
+
+        libxml2-2.7.8.tar.gz
+        http://xmlsoft.org
+        ftp://xmlsoft.org/libxml2/
+
+        mhash 0.9.9.9  (PHP支持库)
+        http://sourceforge.net/projects/mhash/files/mhash/0.9.9.9/
+
+        mcrypt-2.6.8   (PHP支持库)
+        http://sourceforge.net/projects/mcrypt/files/
+
+
+        m4-1.4.16.tar.gz
+        http://ftp.gnu.org/gnu/m4/
+        GNU m4 是 GNU 版本的 m4 宏预处理机。 它被设计避免在传统m4s发现的许多极限： 极限喜欢最大线长、宏指令的最大宏指令的大小，数字等等。
+
+        mcrypt-2.6.8.tar.gz
+        http://sourceforge.net/projects/mcrypt/files/MCrypt/
+
+        memcache-2.2.6.tgz (PHP扩展模块)
+        http://pecl.php.net/package/memcache
+        http://pecl.php.net/get/memcache-2.2.6.tgz
+        http://pecl.php.net/package/memcached
+
+        mhash-0.9.9.9.tar.gz
+        http://sourceforge.net/projects/mhash/files/mhash/
+
+        pcre-8.12.tar.gz  (nginx支持)
+        http://www.pcre.org
+
+        PDO_MYSQL-1.0.2.tgz (PHP扩展模块)
+        http://pecl.php.net/package/PDO_MYSQL
+        http://pecl.php.net/get/PDO_MYSQL-1.0.2.tgz
+
+        xcache-1.3.2.tar.gz (PHP扩展模块)
+        http://xcache.lighttpd.net/
+
+        zlib-1.2.5.tar.gz
+        http://php.net/zlib
+        http://www.zlib.net/
+
+        ZendOptimizer
+        http://docs.linuxtone.org/soft/bsder/ZendOptimizer-3.3.0a-freebsd6.0-i386.tar.gz
+
+
+        Linux下配置asp.net的安装包
+
+
+        mono
+        http://ftp.novell.com/pub/mono/sources/mono/
+
+        xsp
+        http://ftp.novell.com/pub/mono/sources/xsp/
+
+        mod_mono
+        http://ftp.novell.com/pub/mono/sources/mod_mono/
+
+        jexus
+        http://www.j66.net/
+        http://linux.j66.net
+
+        http://www.go-mono.com/mono-downloads/download.html
+
+         * */
+    }
 
 }

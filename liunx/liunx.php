@@ -61,4 +61,33 @@ class deome{ //基础命令
          * */
     }
 
+    /**
+     * 重启服务
+     * */
+    public function service()
+    {
+        /**
+         *
+         ** -----------------Linux 启动、关闭、重启网络服务的两种方式 ---------------------
+         *
+         *一种是可以使用service脚本来调度,如:
+        service  服务名  start
+        service  服务名  stop
+        service  服务名  restart
+        一种是直接执行某个服务自己的管理脚本，以smb服务为例
+        /etc/init.d/smb  start
+        /etc/init.d/smb  stop
+        /etc/init.d/smb  restart
+         *
+         *
+         * 重启PHP
+         * cd /etc/init.d/
+         * service php-fpm restart
+         *
+         *查看PHP扩展可以用php -m
+         *
+         *
+         * */
+    }
+
 }
