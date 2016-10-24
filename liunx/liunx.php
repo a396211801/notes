@@ -90,4 +90,14 @@ class deome{ //基础命令
          * */
     }
 
+    /**
+     * 查看是否存在服务
+     * */
+    public function selectSVR()
+    {
+        /**
+         * which nginx
+         * */
+    }
+
 }

@@ -18,7 +18,7 @@ class global_variable {
          *request_uri
          * $_SERVER['REQUEST_URI']
          *
-         *
+         * <a href="<?php echo str_replace('search', 'downsearch', $_SERVER['REQUEST_URI']);?>"
          * http://www.yoursite.com/example/ — – — /example/index.php
          * http://www.yoursite.com/example/index.php — – — /example/index.php
          * http://www.yoursite.com/example/index.php — – — /example/index.php
