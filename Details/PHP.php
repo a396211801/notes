@@ -135,6 +135,14 @@
 function dome()
 {
 
+    /**
+     *  jquery-pjax
+     *
+     * https://github.com/defunkt/jquery-pjax
+     * */
+
+
+
 }
 
 /**

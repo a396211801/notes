@@ -16,6 +16,12 @@
 class deome{ //基础命令
 
     /**
+     *   清屏命令
+     *
+     * clear只是在 shell 中翻一页,用命令 reset 可以清除屏幕上所有东西。
+     * */
+
+    /**
      * 端口号查看
      * */
     public function ntlp()
@@ -97,6 +103,23 @@ class deome{ //基础命令
     {
         /**
          * which nginx
+         * */
+    }
+
+    /**
+     * 查看文件信息
+     * du *
+     * */
+    public function selectDirname(){
+        /**
+         * 查看文件和文件夹大小：
+         * du –sh dirname
+         *
+         * 如果查看某个目录下所有文件及文件的大小：
+         * du –sh *
+         * 按照文件大小排序
+         * du –sh * |sort –n
+         *
          * */
     }
 

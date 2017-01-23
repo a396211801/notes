@@ -99,6 +99,11 @@
 class deome{
 
     /**
+     * 单独安装教程
+     * https://www.linuxzen.com/lnmphuan-jing-da-jian-wan-quan-shou-ce-si-lnmpda-jian-yuan-ma-an-zhuang.html
+     * */
+
+    /**
      * 编辑器安装
      * */
     public function dowPHPstrom()

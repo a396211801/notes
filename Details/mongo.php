@@ -63,5 +63,23 @@ function demo2()
 
 }
 
+/**
+ *   重启mongo
+ *  Mongodb解决不能连接到服务器的错误
+ * 先看服务启动没有，如果没有启动服务先启动服务，如果服务已经启动了，
+ *那有可能是上次不正常关闭mongo,导致存放数据的文件被占用了，被锁住了。
+ *只需将D:\software\mongodb-2.4.5\data中的mongod.lock文件删除掉。
+ *重新启动服务即可。
+ *
+ * 1.删除data目录中的.lock文件
+ *2.mongod --repair
+ *3.启动mongod就可以了
+ *  /data/mongodb/bin/mongod --dbpath=/data/mongodb/data --logpath=/data/mongodb/log/mongodb.log --fork
+ * */
+
+function demo3(){
+
+}
+
 
 
