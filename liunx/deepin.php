@@ -8,6 +8,30 @@
 
 class abc {
 
+
+    /**
+     * nginx安装网址
+     * */
+    public function service()
+    {
+        /**
+         * http://openresty.org/cn/installation.html
+         * */
+    }
+
+    /**
+     * php安装
+     * */
+    public function php()
+    {
+        /**
+         * 官网直接安装...安装是取消默认安装apache 不然无法运行
+         * */
+    }
+
+
+
+
     /**
      * sudo /data/soft/ngx_openresty/nginx/sbin/nginx
 
