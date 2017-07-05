@@ -16,6 +16,12 @@ class abc {
     {
         /**
          * http://openresty.org/cn/installation.html
+         *
+         *  -s reload
+         *
+         * sudo /data/soft/ngx_openresty/nginx/sbin/nginx
+         * sudo service php5-fpm start
+         *
          * */
     }
 
@@ -29,36 +35,43 @@ class abc {
          * */
     }
 
+    /**
+     * mysql 安装
+     * */
+    public function mysql()
+    {
+        /**
+         *http://www.cnblogs.com/znan/p/5842125.html
+         * */
+    }
 
 
 
     /**
-     * sudo /data/soft/ngx_openresty/nginx/sbin/nginx
-
-    sudo service php5-fpm start
-
-    http://ohmyz.sh/
-
-
-    sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
+     * 其它扩展或其它产品
+     * */
+    public function library()
+    {
+        /**
+         * LDAP 扩展 sudo apt-get install php5-ldap 执行即可
+         * */
 
 
-    mysql http://www.cnblogs.com/znan/p/5842125.html
+        /**
+         * Zsh是一个Linux用户很少使用的shell，这是由于大多数Linux产品安装，以及默认使用bash
+         *shell。几乎每一款Linux产品都包含有zsh，通常可以用apt-get、urpmi或yum等包管理器进行安装。
+         *  http://ohmyz.sh/
+         * sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+         *
+         * */
+    }
 
-    LDAP 扩展 sudo apt-get install php5-ldap 执行即可
-
-    sudo chmod  -R 777  格莱美领取礼品
-
-    unzip -O GBK crm.zip
-
-    -s reload
-
-
-    ./configure --with-php-config=/usr/bin/php-config
-
-
-    add    /etc/php5/fpm/php.ini  *.so
+    /**
+     *
+     *unzip -O GBK crm.zip
+     * ./configure --with-php-config=/usr/bin/php-config
+     *
+     * add    /etc/php5/fpm/php.ini  *.so
      * */
 
 
