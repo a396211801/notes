@@ -45,8 +45,6 @@ class abc {
          * */
     }
 
-
-
     /**
      * 其它扩展或其它产品
      * */
@@ -56,13 +54,40 @@ class abc {
          * LDAP 扩展 sudo apt-get install php5-ldap 执行即可
          * */
 
-
         /**
          * Zsh是一个Linux用户很少使用的shell，这是由于大多数Linux产品安装，以及默认使用bash
          *shell。几乎每一款Linux产品都包含有zsh，通常可以用apt-get、urpmi或yum等包管理器进行安装。
          *  http://ohmyz.sh/
          * sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
          *
+         * */
+
+        /**
+         * 添加快捷方式
+         * cd /usr/share/applications
+         *
+         *
+         * [Desktop Entry]
+         * Name=每天来一发
+         * Comment=idea
+         * Exec=/data/soft/idea-IU-163.12024.16/bin/idea.sh
+         * Icon=/data/soft/idea-IU-163.12024.16/bin/idea.png
+         * Terminal=false
+         * Type=Application
+         * Categories=Application;
+         *
+         * */
+    }
+
+    /**
+     * 任务计划执行
+     * */
+    public function taskImplement()
+    {
+        /**
+         * linux下一般都自带这个系统功能
+         * crontab -e
+         * http://www.cnblogs.com/intval/p/5763929.html
          * */
     }
 
