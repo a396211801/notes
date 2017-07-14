@@ -52,8 +52,101 @@ class abc {
     {
         /**
          *http://www.cnblogs.com/znan/p/5842125.html
+         * http://blog.csdn.net/ann_rps/article/details/52043923
          * */
     }
+
+    /**********************************************************************************|*/
+    /**
+     * memache 服务与扩展安装
+     * http://www.cnblogs.com/hejun695/p/5369610.html
+     *
+     * linux上安装memcached不算太困难。唯一让本人感到困难的是 php7的memcache扩展安装。真的蛋疼！
+
+    先说安装服务端 memcached
+
+    1. 首先安装Libevent事件触发管理器。
+
+    wget https://github.com/downloads/libevent/libevent/libevent-2.0.21-stable.tar.gz
+    tar vxf libevent-2.0.21-stable.tar.gz
+    cd libevent-2.0.21-stable
+    ./configure -prefix=/usr/local/libevent    # ./configure
+    make && make install
+    2. 编译安装memcached
+
+    wget http://memcached.org/latest
+    cp latest memcached.tar.gz
+    tar -zxvf memcached.tar.gz
+    cd memcached
+    ./configure -with-libevent=/usr/local/libevent   # ./configure
+    make && make install
+    3. 启动memcached
+
+    /usr/local/memcached/bin/memcached -d -m 128 -l 127.0.0.1 -p 11211 -u root   # (128为内存, 11211为端口,root为用户组)
+    4. 开机/重启后生效，编辑 /etc/rc.d/rc.local 文件，添加以下内容。
+
+    /usr/local/memcached/bin/memcached -d -m 128 -l 127.0.0.1 -p 11211 -u root
+    5. 查看是否启动成功
+
+    ps aux|grep memcached
+    如图则成功
+
+
+
+    -----------------------------------------------------------------------分割线-----------------------------------------------------------------------------------
+
+    下面则是php的扩展memcache安装了。
+
+    用之前的php版本安装是没有问题，但是用了php7安装 http://pecl.php.net/package/memcache 下的任一款memcache都会报错
+
+    穷尽一切办法之后发现了 Github的pecl-memcache分支版本
+
+    本地下载，https://github.com/websupport-sk/pecl-memcache/archive/php7.zip
+
+
+
+        1. rz命令 上传至linux虚拟机上。
+
+        unzip pecl-memcache-php7.zip
+        cd pecl-memcache-php7
+        /usr/local/php/bin/phpize
+        ./configure --with-php-config=/usr/local/php/bin/php-config
+        make && make install
+        2. 修改php.ini 加载Memcache组件
+
+        [memcache]
+        extension_dir = "/usr/local/php70/lib/php/extensions/no-debug-non-zts-20151012/"
+        extension = "memcache.so"
+        注！！！一定要确认有效的 php.ini的位置
+
+        查找php.ini位置的方法
+
+        1.写一个测试文件，内容<?php phpinfo(); ?>，在第七八行左右，有“Loaded Configuration File”就标明了php.ini的位置。
+        2.没指定php.ini或者找不到php.ini(none)，php会按照默认配置运行的。
+        3. 重启 php-fpm
+     *
+     *
+     * */
+
+
+
+
+    /**
+     *              redis 安装
+     *
+     *
+     *
+     *
+     *
+     *
+     *
+     *
+     *
+     *
+     * */
+
+
+
 
 
     /**
