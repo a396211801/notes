@@ -11,6 +11,11 @@ class redis {
 
     /**
      *安装
+     *  win
+     *http://pecl.php.net/package/redis/3.1.1
+     * linux
+     *wget http://pecl.php.net/get/redis-2.2.5.tgz
+     *
      * */
     public function ming (){
         /**

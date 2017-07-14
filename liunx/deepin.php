@@ -31,7 +31,17 @@ class abc {
     public function php()
     {
         /**
-         * 官网直接安装...安装是取消默认安装apache 不然无法运行
+         * 官网直接安装...安装是取消默认安装apache 不然无法运行(不知道怎么取消默认)
+         *
+         * ubuntu16.04默认是php 7，要装php 5.x要添加第三方源：
+         * sudo apt-add-repository ppa:ondrej/php
+         * 或者
+         * LC_ALL=C.UTF-8 add-apt-repository -y ppa:ondrej/php
+         *然后就是正常的update之后安装php5.6了
+         *
+         * //卸载所有
+         * sudo apt-get --purge remove php7.0*
+         *
          * */
     }
 
@@ -44,6 +54,18 @@ class abc {
          *http://www.cnblogs.com/znan/p/5842125.html
          * */
     }
+
+
+    /**
+     * php端口监听问题
+     *php-fpm.conf 里面有端口配置，默认走unix，要改成9000端口的形式
+     *
+     * 因为nginx配置的php是监听9000端口的  两边要一致才行
+     *
+     * ;listen = /run/php/php7.0-fpm.sock
+     * listen = 127.0.0.1:9000
+     *
+     * */
 
     /**
      * 其它扩展或其它产品
