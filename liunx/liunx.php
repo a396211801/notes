@@ -123,4 +123,15 @@ class deome{ //基础命令
          * */
     }
 
+
+    /**
+     * 查看关机时间  last |grep reboot
+     *
+     * last |grep shutdown last |grep reboot last
+     *last |grep shutdown
+     *last |grep reboot
+     * last
+     *
+     * */
+
 }

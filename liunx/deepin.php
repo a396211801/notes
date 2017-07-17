@@ -53,6 +53,16 @@ class abc {
         /**
          *http://www.cnblogs.com/znan/p/5842125.html
          * http://blog.csdn.net/ann_rps/article/details/52043923
+         *
+         * 在配置文件修改mysql.conf 的ip地址为0.0.0.0
+         *
+         * mysql -u root -p
+         * mysql>use mysql;
+         * mysql>update user set host =’%'where user =’root’;
+         * mysql>flush privileges;
+         *
+         * 然后重启
+         *
          * */
     }
 
@@ -132,24 +142,6 @@ class abc {
 
 
     /**
-     *              redis 安装
-     *
-     *
-     *
-     *
-     *
-     *
-     *
-     *
-     *
-     *
-     * */
-
-
-
-
-
-    /**
      * php端口监听问题
      *php-fpm.conf 里面有端口配置，默认走unix，要改成9000端口的形式
      *
@@ -193,6 +185,55 @@ class abc {
          *
          * */
     }
+
+
+    /**
+     * mongodb安装服务
+     * http://www.runoob.com/mongodb/mongodb-linux-install.html
+     *
+     * 官网下载地址  https://www.mongodb.com/download-center#community
+     *
+     * mongodb  php扩展
+     *
+     * git 地址 https://github.com/mongodb/mongo-php-driver
+     *
+     *
+     * tar zxvf mongodb-mongodb-php-driver-<commit_id>.tar.gz
+     * cd mongodb-mongodb-php-driver-<commit_id>
+     *  /usr/local/php/bin/phpize
+     * ./configure --with-php-config=/usr/local/php/bin/php-config
+     * sudo make install
+     *
+     *
+     *
+     * 错误提示
+     *
+     * root@iZrj9fc6cg6lbfhbffdipcZ:/data/soft/mongo-php-driver# phpize
+        Configuring for:
+        PHP Api Version:         20151012
+        Zend Module Api No:      20151012
+        Zend Extension Api No:   320151012
+        /usr/bin/m4:config.m4:364: cannot open `src/libmongoc/build/autotools/m4/ax_prototype.m4': No such file or directory
+        /usr/bin/m4:config.m4:365: cannot open `src/libmongoc/build/autotools/CheckCompiler.m4': No such file or directory
+        /usr/bin/m4:config.m4:366: cannot open `src/libmongoc/build/autotools/WeakSymbols.m4': No such file or directory
+        /usr/bin/m4:config.m4:367: cannot open `src/libmongoc/build/autotools/m4/ax_pthread.m4': No such file or directory
+        /usr/bin/m4:config.m4:399: cannot open `src/libbson/build/autotools/CheckAtomics.m4': No such file or directory
+        /usr/bin/m4:config.m4:400: cannot open `src/libbson/build/autotools/FindDependencies.m4': No such file or directory
+        /usr/bin/m4:config.m4:401: cannot open `src/libbson/build/autotools/m4/ac_compile_check_sizeof.m4': No such file or directory
+        /usr/bin/m4:config.m4:402: cannot open `src/libbson/build/autotools/m4/ac_create_stdint_h.m4': No such file or directory
+        /usr/bin/m4:config.m4:444: cannot open `src/libmongoc/build/autotools/Versions.m4': No such file or directory
+        /usr/bin/m4:config.m4:458: cannot open `src/libbson/build/autotools/Versions.m4': No such file or directory
+        autom4te: /usr/bin/m4 failed with exit status: 1
+
+     *
+     *
+     * 解决问题使用如下：
+     * [root@www mongo-php-driver]# git submodule update --init
+     *
+     *
+     * */
+
+
 
     /**
      * 任务计划执行
