@@ -66,6 +66,11 @@ class abc {
          * */
     }
 
+    /**
+     *  安装扩展可直接　　apt-get install php-redis
+     * */
+
+
     /**********************************************************************************|*/
     /**
      * memache 服务与扩展安装
@@ -249,7 +254,7 @@ class abc {
 
     /**
      *
-     *unzip -O GBK crm.zip
+     * unzip -O GBK crm.zip
      * ./configure --with-php-config=/usr/bin/php-config
      *
      * add    /etc/php5/fpm/php.ini  *.so
