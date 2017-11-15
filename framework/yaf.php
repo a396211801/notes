@@ -38,6 +38,8 @@
  *cd yaf-2.1.18
  *wget http://pecl.php.net/get/yaf-2.2.9.tgz && tar zxvf yaf-2.2.9.tgz && cd yaf-2.2.9
  *
+ * wget http://pecl.php.net/get/yaf-3.0.4.tgz
+ *
  *2.接着依次执行:
  *
  *usr/local/php/bin/phpize  && ./configure --with-php-config=/usr/local/php/bin/php-config && make && make install
