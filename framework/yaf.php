@@ -77,8 +77,25 @@
  *
  *
  *
+ *   命名空间报错
+ *
+ * 方法一：@
+    在任何错误语句之前加上@符号，即可屏蔽！
+    方法二：error_reporting
+    在PHP文件第一行加上：error_reporting(0); 即可屏蔽！
+    方法三：display_errors
+    打开php.ini文件，搜索display_errors = on,默认的应该是on，改为off 即可屏蔽！
+ *
+ *
+ *
+ *
+ *
+ *
+ *
  *
  *
  *
  *
  */
+
+
