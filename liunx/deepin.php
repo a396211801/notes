@@ -22,6 +22,12 @@ class abc {
          * sudo /data/soft/ngx_openresty/nginx/sbin/nginx
          * sudo service php5-fpm start
          *
+         * 先安装zsh
+         * 再安装nginx  如果其中报ssl版本不和。可以找到对应版本对应ssl地址即可　(不是对应系统的ssl版本，下载对应ssl版本解压。configure　指定ssl解压文件地址即可)
+         * ssl官网下载即可 https://www.openssl.org/   (一般通用对应1.0.1u版本)
+         * 然后安装php5-fpm 即可。
+         *
+         *
          * */
     }
 
@@ -40,7 +46,10 @@ class abc {
          *然后就是正常的update之后安装php5.6了
          *
          * //卸载所有
-         * sudo apt-get --purge remove php7.0*
+         * sudo apt-get --purge remove php7.0* (以上安装php这个方法太low)
+         *
+         * 安装 apt-get install php-fpm　  apt-get install php-del  默认都是7(如果要５版本在php后加上5)　其它模块一样
+         *
          *
          * */
     }
