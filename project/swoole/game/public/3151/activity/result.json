@@ -1,0 +1,32 @@
+{
+  "code": "0000000",
+  "desc": "成功",
+  "data": {
+    "result": 2,
+    "activityId": 2427,
+    "orderId": "26013600980148",
+    "lottery": {
+      "st_info_dpm_title_click": "{\"dpm\":\"28155.4.7.0\",\"orderId\":\"taw-26013600980148\",\"consumerId\":1756680340,\"domain4Web\":\"//activity.yuyiya.com\",\"deliveryType\":1,\"device_type\":\"tuia\",\"materialId\":13105,\"url\":\"/statistics/click\",\"advertId\":11359,\"dcm\":\"104.11359.0101000.13105\",\"activityId\":2427,\"domain\":\"//embedlog.duiba.com.cn\",\"appId\":28155}",
+      "androidDownloadUrl": "//activity.yuyiya.com/activity/redirect?url=http%3A%2F%2Fdkx.yytaomeng.com%2Fdkx%2FHTML%2Fdkx_yunying%2Fdkx%2Fdkxdkxnew%2Findex.html%3Fabc%3DTYIOS&orderId=taw-26013600980148&dcm=104.11359.0101000.13105&dpm=28155.4.1.0&activityId=2427&device_type=tuia",
+      "link": "//activity.yuyiya.com/activity/indexRecord?vmName=detail&orderId=26013600980148&dpm=28155.4.3.0&dcm=104.11359.0101000.13105",
+      "useBtnText": "马上使用",
+      "title": "贷款无阻力",
+      "type": "lucky",
+      "openUrl": "",
+      "imgurl": "//yun.yuyiya.com/tuia/img/t5pxs0rap8.jpg",
+      "st_info_dpm_exposure": "{\"dpm\":\"28155.4.1.0\",\"orderId\":\"taw-26013600980148\",\"consumerId\":1756680340,\"domain4Web\":\"//activity.yuyiya.com\",\"deliveryType\":1,\"device_type\":\"tuia\",\"materialId\":13105,\"url\":\"/activity/showLog\",\"advertId\":11359,\"dcm\":\"104.11359.0101000.13105\",\"activityId\":2427,\"domain\":\"//embedlog.duiba.com.cn\",\"appId\":28155}",
+      "showUse": true,
+      "linkTo": 0,
+      "iosDownloadUrl": "//activity.yuyiya.com/activity/redirect?url=http%3A%2F%2Fdkx.yytaomeng.com%2Fdkx%2FHTML%2Fdkx_yunying%2Fdkx%2Fdkxdkxnew%2Findex.html%3Fabc%3DTYIOS&orderId=taw-26013600980148&dcm=104.11359.0101000.13105&dpm=28155.4.1.0&activityId=2427&device_type=tuia",
+      "tip": "0利息0抵押，当天即可放款！快来申请！",
+      "id": 14872,
+      "isDownloadUrl": true,
+      "st_info_dpm_btn_close": "{\"dpm\":\"28155.4.4.0\",\"orderId\":\"taw-26013600980148\",\"consumerId\":1756680340,\"domain4Web\":\"//activity.yuyiya.com\",\"deliveryType\":1,\"device_type\":\"tuia\",\"materialId\":13105,\"url\":\"/statistics/click\",\"advertId\":11359,\"dcm\":\"104.11359.0101000.13105\",\"activityId\":2427,\"domain\":\"//embedlog.duiba.com.cn\",\"appId\":28155}",
+      "st_info_dpm_img_click": "{\"dpm\":\"28155.4.5.0\",\"orderId\":\"taw-26013600980148\",\"consumerId\":1756680340,\"domain4Web\":\"//activity.yuyiya.com\",\"deliveryType\":1,\"device_type\":\"tuia\",\"materialId\":13105,\"url\":\"/statistics/click\",\"advertId\":11359,\"dcm\":\"104.11359.0101000.13105\",\"activityId\":2427,\"domain\":\"//embedlog.duiba.com.cn\",\"appId\":28155}",
+      "st_info_dpm_btn_get": "{\"dpm\":\"28155.4.6.0\",\"orderId\":\"taw-26013600980148\",\"consumerId\":1756680340,\"domain4Web\":\"//activity.yuyiya.com\",\"deliveryType\":1,\"device_type\":\"tuia\",\"materialId\":13105,\"url\":\"/statistics/click\",\"advertId\":11359,\"dcm\":\"104.11359.0101000.13105\",\"activityId\":2427,\"domain\":\"//embedlog.duiba.com.cn\",\"appId\":28155}",
+      "validate": "2017-08-31"
+    },
+    "status": "success"
+  },
+  "success": true
+}

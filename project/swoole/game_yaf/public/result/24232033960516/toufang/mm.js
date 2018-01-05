@@ -1,0 +1,12 @@
+﻿		var p_arr=[['张若诗','http://i.13e13e.cn/image/weibo/img2.jpg','诗诗',[  'jfwx169', 'fxweixin881','fxweixin848', 'ln17weixink','yeweixin881','jfweixin103','ssweixin182','fxwx239','jfwx172','jfwx152','jfwx532','ABweixin203','jfwx513','fxweixin875','jfwx438','Qweixin1203','jfwx578','xiao9657niu','ssweixin185','ssweixin962','ssweixin964','ssweixin338','jfweixin185','ssweixin171','fxweixin822','fxweixin852','ssweixin801','ssweixin968','uu5hs61','jfweixin334','jfwx886699','jfwx466','jfwx522','jfweixin123','jfwx178','tzgl514','jfwx530','fxfh4577','zhuyb7260','fxweixin830','jfwx514','yL07weixinqh','fxweixin873','jfwx535','fxwx236','fxweixin837','zhcc6180','adwx2201','jfwx122','niu9772xiao','hrvhs1366','ffjfwx888','jfwx5310','weismile820','ssweixin206','yeweixin183','nxweixin888','ssweixin166','nkweixin385','ln16weixink','ssweixin991','ssweixin184','jfwx529','fxweixin840','jfwx583','jfwx534','zhuml7319','jfwx143','jfwx786','jfwx394']],
+				   ['张若诗','http://i.13e13e.cn/image/weibo/img2.jpg','诗诗',[  'jfwx169', 'fxweixin881','fxweixin848', 'ln17weixink','yeweixin881','jfweixin103','ssweixin182','fxwx239','jfwx172','jfwx152','jfwx532','ABweixin203','jfwx513','fxweixin875','jfwx438','Qweixin1203','jfwx578','xiao9657niu','ssweixin185','ssweixin962','ssweixin964','ssweixin338','jfweixin185','ssweixin171','fxweixin822','fxweixin852','ssweixin801','ssweixin968','uu5hs61','jfweixin334','jfwx886699','jfwx466','jfwx522','jfweixin123','jfwx178','tzgl514','jfwx530','fxfh4577','zhuyb7260','fxweixin830','jfwx514','yL07weixinqh','fxweixin873','jfwx535','fxwx236','fxweixin837','zhcc6180','adwx2201','jfwx122','niu9772xiao','hrvhs1366','ffjfwx888','jfwx5310','weismile820','ssweixin206','yeweixin183','nxweixin888','ssweixin166','nkweixin385','ln16weixink','ssweixin991','ssweixin184','jfwx529','fxweixin840','jfwx583','jfwx534','zhuml7319','jfwx143','jfwx786','jfwx394']]];
+		var p_index=Math.floor((Math.random()*p_arr.length));
+		var pList=p_arr[p_index];
+		var pic1=pList[1];
+		var name=pList[2];
+		
+		arr_wx=pList[3];
+		var wx_index = Math.floor((Math.random()*arr_wx.length));
+		var stxlwx = arr_wx[wx_index];	
+		var img = arr_wx[wx_index]+".jpg";
+var wx_img = "<img src='http://i.13e13e.cn/tianya/"+img+"' style='margin:0 auto;'>";

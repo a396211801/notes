@@ -1,0 +1,149 @@
+html{font-family:sans-serif;}
+html,body,header,section,footer,div,ul,ol,li,img,a,span,em,del,legend,center,strong,var,fieldset,form,label,dl,dt,dd,cite,input,hr,time,mark,code,figcaption,figure,textarea,h1,h2,h3,h4,h5,h6,p{margin:0;border:0;padding:0;font-style:normal;}
+html,body {-webkit-touch-callout:none;-webkit-text-size-adjust:none;-webkit-tap-highlight-color:rgba(0, 0, 0, 0);-webkit-user-select:none;background-color: #fff;}
+nav,article,aside,details,main,header,footer,section,fieldset,figcaption,figure{display:block;}
+img,a,button,em,del,strong,var,label,cite,small,time,mark,code,textarea{display:inline-block;}
+header,section,footer {position:relative;}
+ol,ul{list-style:none;}
+input,button,textarea {border:0;margin:0;padding:0;font-size:1em;line-height:1em;-webkit-appearance:none;background-color:rgba(0, 0, 0, 0);}
+span{display:inline-block;}
+a:active, a:hover {outline:0;}
+a, a:visited{text-decoration:none;}
+label, .wordWrap{word-wrap:break-word;word-break:break-all;}
+table {border-collapse:collapse;border-spacing:0;}
+td,th {padding:0;}
+html,body{width:100%;height:100%;}
+i{font-style:normal;}
+button{display:block;outline:0;}
+button:hover{outline:0;}
+button:active{opacity:0.8;filter:alpha(opacity=80);-moz-opacity:0.8;}
+select{outline:0;background:transparent;appearance:none;-moz-appearance:none;-webkit-appearance:none;}
+select:hover{outline:0;}
+select:active{background-color:rgba(0, 0, 0, .1);}
+img{display:block;}
+.fl{float:left;}
+.fr{float:right;}
+.clearfix:after{content:'';display:block;clear:both;visibility:hidden;line-height:0;height:0;}
+
+#wrapper{width:6.4rem;height:100%;font-size:0.24rem;margin:0 auto;overflow:hidden;}
+.header{width:100%;height:0.8rem;background:#f3f3f4;position:relative;}
+.header .header-title{height:0.8rem;line-height:0.33rem;text-align:center;font-size:0.32rem;color:#333;}
+.header .header-back{width:0.4rem;height:0.4rem;position:absolute;top:0.2rem;left:0.2rem;background:url(../images/back_icon.png) no-repeat center center;background-size:0.44rem 0.44rem;}
+
+.footer{width:100%;height:0.92rem;position:relative;}
+.footer .submit{width:100%;height:0.92rem;line-height:0.92rem;background:#ffb81e;font-size:0.32rem;color:#fff;text-align:center;}
+
+.main{height:calc(100% - 1.72rem);overflow:auto;-webkit-overflow-scrolling:touch;font-size:0.28rem;color:#4c4c4c;background:#f2f2f2;}
+
+.apply .form{padding-left:0.2rem;padding-right:0.2rem;border-top:1px solid #d2d2d2;background:#fff;}
+.apply .item{height:0.9rem;line-height:0.9rem;font-size:0.28rem;color:#333;border-bottom:1px solid #dcdcdc;position:relative;}
+.apply .item select,.apply .item #city,.apply .item .loanNum{width:3.2rem;height:0.9rem;direction:rtl;border:0;padding-right:0.28rem;font-size:0.28rem;color:#333;}
+.apply .item .loanNum{padding-right:0.48rem;width:3rem;}
+.apply .item .loanNum:hover{outline:0;}
+.apply .item.select:after{position:absolute;top:0;right:0;width:0.28rem;height:0.9rem;visibility:visible;background:url(../images/turn_right.png) no-repeat center center;background-size:0.24rem 0.36rem;}
+.apply .item input[type=radio]{-webkit-appearance:radio;display:inline-block;height:0.3rem;width:0.3rem;vertical-align:middle;margin-left:0.3rem;background-color:#ffb81e}
+
+.login{height:100%;overflow:auto;-webkit-overflow-scrolling:touch;}
+.login .bg img{width:100%;height:3.6rem;padding-bottom:0.28rem;}
+.login .item{position:relative;}
+.login .item input{display:block;width:4.4rem;height:0.56rem;line-height:0.56rem;padding:0.16rem 0.12rem 0.16rem 1.08rem;margin:0.2rem auto 0;font-size:0.3rem;color:#b2b2b2;border:1px solid #c9c9c9;border-radius:0.08rem;}
+.login .item.user:after{content:'';display:block;position:absolute;top:0;left:0.4rem;width:1.08rem;height:0.88rem;visibility:visible;background:url(../images/text_icon.png) no-repeat center center;background-size:0.48rem 0.48rem;}
+.login .item.mobile:after{content:'';display:block;position:absolute;top:0;left:0.4rem;width:1.08rem;height:0.88rem;visibility:visible;background:url(../images/mobile_icon.png) no-repeat center center;background-size:0.48rem 0.48rem;}
+.login .item input[name="code"]{display:block;width:3.4rem;padding:0.16rem;margin-left:0.4rem;text-align:center;}
+.login .item input:hover{outline:0;border-color:#ffb81e;}
+.login .item #sendCode{display:block;position:absolute;top:0;right:0.4rem;width:1.72rem;height:0.92rem;font-size:0.28rem;color:#7d7e7f;background:#e8e8e8;border:1px solid #c9c9c9;border-radius:0.08rem;margin: 0; padding: 0;}
+.login .submit{width:5.6rem;height:0.9rem;line-height:0.9rem;background:#ffb81e;font-size:0.32rem;color:#fff;text-align:center;margin:0.52rem auto 0;border-radius:0.08rem;}
+.login .log-tips{font-size:0.28rem;color:#808080;text-align:center;padding-top:0.36rem;}
+.login .log-tips a{color:#f27250;}
+
+.login .case .case-title{padding-top:0.56rem;padding-bottom:0.28rem;}
+.login .case .case-title .line{width:5.6rem;height:1px;margin-left:0.4rem;background:#dcdcdc;}
+.login .case .case-title p{width:1.5rem;height:0.36rem;line-height:0.36rem;margin-left:2.45rem;margin-top:-0.18rem;text-align:center;font-size:0.28rem;color:#b2b2b2;background:#fff;}
+.login .case .case-info{background:-webkit-linear-gradient(#ffffff,#97b2fe);background:-o-linear-gradient(#ffffff,#97b2fe);background:-moz-linear-gradient(#ffffff,#97b2fe);background:linear-gradient(#ffffff,#97b2fe);}
+
+.login .case .case-info{padding-bottom:0.56rem;}
+.login .case .group{width:5.6rem;padding:0.16rem 0.2rem 0.64rem;margin:0.2rem auto 0;border:1px solid #dcdcdc;border-radius:0.05rem;background:#fff;position:relative;}
+.login .case .group .person-img img{width:0.85rem;height:0.85rem;border:1px solid #dcdcdc;border-radius:50%;}
+.login .case .group .person-info{padding-left:0.16rem;padding-top:0.08rem;}
+.login .case .group .person-name{font-size:0.28rem;color:#4c4c4c;line-height:0.4rem;}
+.login .case .group .person-name i{font-size:0.24rem;color:#5dace6;padding-left:0.16rem;}
+.login .case .group .loan-info{line-height:0.4rem;font-size:0.24rem;color:#333;}
+.login .case .group .loan-info .left{width:2rem;}
+.login .case .group .loan-info .right{width:2.4rem;}
+.login .case .group .loan-info i{padding-left:0.12rem;}
+.login .case .group .loan-info.loan-money i{color:#f93515;}
+.login .case .group .group-text{line-height:0.32rem;padding-top:0.12rem;font-size:0.24rem;color:#808080;text-overflow:-o-ellipsis-lastline;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;}
+.login .case .group a{font-size:0.24rem;color:#999;position:absolute;right:0.24rem;margin-top:0.12rem;}
+.login .case .group .group-text.group-more{-webkit-line-clamp:inherit;}
+.hide{display: none}
+.show{display: block}
+#pop {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    overflow: auto;
+    z-index: 9999;}
+
+.gt_mobile_holder{
+    display: inline-block;
+    margin-top: 100px;
+
+}
+label.error{position:absolute;bottom:-0.25rem;left:1.5rem;background:#ffb81e;font-size:0.24rem;color:#f35;padding:0.05rem 0.16rem;border-radius:0.02rem;z-index:999;}
+
+/*20170223 add*/
+.case-ad-wrap {
+	background: -webkit-linear-gradient(#ffffff,#48b7c9);
+    background: -o-linear-gradient(#ffffff,#48b7c9);
+    background: -moz-linear-gradient(#ffffff,#48b7c9);
+    background: linear-gradient(#ffffff,#48b7c9);
+    overflow: hidden;
+}
+.case-ad {
+	display: block;
+	width: 6rem;
+	height: 3.62rem;
+	overflow: hidden;
+	margin: 0 auto;
+	padding-bottom: .2rem;
+}
+.case-ad img {
+	width: 6rem;
+	height: 3.62rem;
+}
+.apply-footer {
+    height: 3.1rem;
+    padding-top: 1rem;
+    background: url(../images/mbloan3/loan_foot_bg.png) no-repeat center center;
+    background-size: 6.5rem 3.5rem;
+    box-sizing: border-box;
+}
+.apply-footer p {
+	text-align: center;
+	font-size: .22rem;
+	color: #0e6b77;
+}
+.apply-footer p.p1 {
+	font-size: .26rem;
+	margin-bottom: .1rem;
+}
+.protocol {
+	height: .4rem;
+	line-height: .4rem;
+	padding-left: .48rem;
+	font-size: .24rem;
+	color: #808080;
+	background: url(../images/check_icon.png) no-repeat 0 center;
+	background-size: .4rem .4rem;
+	margin-top: .12rem;
+	margin-bottom: .32rem;
+	margin-left: .4rem;
+}
+
+.protocol a {
+	color: #1A98C7;
+}

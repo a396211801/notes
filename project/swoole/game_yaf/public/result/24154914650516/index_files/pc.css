@@ -1,0 +1,407 @@
+/*公用样式*/
+.wrap {
+	width: 100%;
+	min-width: 1024px;
+}
+.wh-1024 {
+	width: 1024px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.bg-color-fff {
+	background-color: #fff;
+}
+.bg-color-header {
+	background-color: #1652b2;
+}
+.bg-color-title {
+	background-color: #ea4646
+}
+.bg-color-foot {
+	background-color: #f3f3f3;
+}
+.border-radius6 {
+	border-radius: 6px;
+}
+.border-radius8 {
+	border-radius: 8px;
+}
+.wh50 {
+	width: 50%;
+}
+/*顶部*/
+.top {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 1000;
+}
+.top a {
+	padding-right: 15px;
+	border-right: 1px solid #edf2f6;
+}
+.top a img {
+	vertical-align: top;
+}
+.top span {
+	height: 32px;
+	font-size: 18px;
+	line-height: 32px;
+}
+.top span em {
+	color: #ff8400;
+}
+.top span i {
+	color: #181818;
+}
+/*头部通栏*/
+.header {
+	margin-top: 52px;
+	height: 429px;
+	background: url(../images/header_banner.png) #fe894f center no-repeat;
+}
+/*完善信息*/
+.input-info {
+	line-height: 60px;
+	font-size: 24px;
+	color: #fff;
+	font-weight: bold;
+}
+.input-info span {
+	display: inline-block;
+	color: #ffde00;
+	-moz-animation: wordShake 1s;
+	-ms-animation: wordShake 1s;
+	-o-animation: wordShake 1s;
+	-webkit-animation: wordShake 1s;
+	animation: wordShake 1s;
+}
+@-o-keyframes wordShake {
+	0% {
+		-o-transform: rotate(0deg);
+		font-size: 24px;
+	}
+	25% {
+		-o-transform: rotate(25deg);
+		font-size: 36px;
+	}
+	50% {
+		-o-transform: rotate(0deg);
+		font-size: 48px;
+	}
+	75% {
+		-o-transform: rotate(25deg);
+		font-size: 36px;
+	}
+	100% {
+		-o-transform: rotate(0deg);
+		font-size: 24px;
+	}
+}
+@-ms-keyframes wordShake {
+	0% {
+		-ms-transform: rotate(0deg);
+		font-size: 24px;
+	}
+	25% {
+		-ms-transform: rotate(25deg);
+		font-size: 36px;
+	}
+	50% {
+		-ms-transform: rotate(0deg);
+		font-size: 48px;
+	}
+	75% {
+		-ms-transform: rotate(25deg);
+		font-size: 36px;
+	}
+	100% {
+		-ms-transform: rotate(0deg);
+		font-size: 24px;
+	}
+}
+@-moz-keyframes wordShake {
+	0% {
+		-moz-transform: rotate(0deg);
+		font-size: 24px;
+	}
+	25% {
+		-moz-transform: rotate(25deg);
+		font-size: 36px;
+	}
+	50% {
+		-moz-transform: rotate(0deg);
+		font-size: 48px;
+	}
+	75% {
+		-moz-transform: rotate(25deg);
+		font-size: 36px;
+	}
+	100% {
+		-moz-transform: rotate(0deg);
+		font-size: 24px;
+	}
+}
+@-webkit-keyframes wordShake {
+	0% {
+		-webkit-transform: rotate(0deg);
+		font-size: 24px;
+	}
+	25% {
+		-webkit-transform: rotate(25deg);
+		font-size: 36px;
+	}
+	50% {
+		-webkit-transform: rotate(0deg);
+		font-size: 48px;
+	}
+	75% {
+		-webkit-transform: rotate(25deg);
+		font-size: 36px;
+	}
+	100% {
+		-webkit-transform: rotate(0deg);
+		font-size: 24px;
+	}
+}
+@keyframes wordShake {
+	0% {
+		transform: rotate(0deg);
+		font-size: 24px;
+	}
+	25% {
+		transform: rotate(25deg);
+		font-size: 36px;
+	}
+	50% {
+		transform: rotate(0deg);
+		font-size: 48px;
+	}
+	75% {
+		transform: rotate(25deg);
+		font-size: 36px;
+	}
+	100% {
+		transform: rotate(0deg);
+		font-size: 24px;
+	}
+}
+.perfect-info-box .left-box .form-msg {
+	position: relative;
+	width: 450px;
+}
+.perfect-info-box .left-box .td-lt-wh {
+	width: 90px;
+}
+.perfect-info-box .left-box .td-rt-wh {
+	width: 360px;
+}
+.perfect-info-box .left-box table {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.perfect-info-box .left-box table .input-box {
+	position: relative;
+}
+.perfect-info-box .left-box table .input-box span {
+	position: absolute;
+	display: block;
+	left: 0;
+	bottom: 8px;
+	font-size: 14px;
+	color: #ea4646;
+}
+.perfect-info-box .left-box .input-title {
+	font-size: 18px;
+	color: #1b1b1b;
+}
+.perfect-info-box .left-box .input-text {
+	width: 338px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 18px;
+	color: #000;
+	background-color: #f3f3f3;
+	border-radius: 6px;
+	border: 1px solid #fff;
+}
+.perfect-info-box .left-box td input.input-text-captcha {
+	width: 200px;
+}
+.perfect-info-box .left-box td input.send {
+	width: 120px;
+	height: 40px;
+	border-radius: 6px;
+	background-color: #ffaf02;
+	font-size: 18px;
+	color: #fff;
+	line-height: 40px;
+	cursor: pointer;
+}
+.perfect-info-box .left-box td input.send-active {
+	color: #ffaf02;
+	background-color: #fff;
+	border: 1px solid #ffaf02;
+}
+.perfect-info-box .left-box .input-box input.active{
+	border: 1px solid #bff1ff;
+	border-radius: 6px;
+}
+.perfect-info-box .left-box td input.input-img-captcha {
+	width: 200px;
+}
+.perfect-info-box .left-box .input-box .input-check {
+	vertical-align: middle;
+}
+.perfect-info-box .left-box .input-box .input-check {
+	width: 0px;
+	height: 0px;
+	margin: 0px;
+	padding: 0px;
+	opacity: 0;
+	display: none;
+}
+.perfect-info-box .left-box .input-box label {
+	display: inline-block;
+	height: 24px;
+	line-height: 24px;
+	background-image: url(../images/nochecked.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	font-size: 14px;
+	color: #4d2525;
+}
+.perfect-info-box .left-box .input-box label.active {
+	background-image: url(../images/ischecked.png);
+}
+.perfect-info-box .left-box .input-box label a {
+	color: #ea4646;
+}
+.perfect-info-box .left-box .submit #submit-btn {
+	display: block;
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	font-size: 22px;
+	color: #fff;
+	background-color: #ea4646;
+	border-radius: 6px;
+	border: 0;
+	cursor: pointer;
+}
+.perfect-p {
+	text-align: center;
+	font-size: 14px;
+	color: #c7c7c7;
+}
+/*平安保险红包背景*/
+.perfect-info-box .right-box.packet-bg-PA {
+	min-height: 490px;
+	background: url(../images/red_packet_two_PA.png) 90px 110px no-repeat;
+}
+.perfect-info-box .right-box.packet-bg-PAZ {
+	min-height: 490px;
+	background: url(../images/red_packet_two_PAZ.png) 90px 110px no-repeat;
+}
+/*泰康保险红包背景*/
+.perfect-info-box .right-box.packet-bg-TK {
+	min-height: 490px;
+	background: url(../images/red_packet_two_TK.png) 90px 110px no-repeat;
+}
+.perfect-info-box .right-box.packet-bg-TKFZ2 {
+	min-height: 490px;
+	background: url(../images/red_packet_two_TKFZ2.png) 90px 110px no-repeat;
+}
+.perfect-info-box .right-box.packet-bg-TKFZ3 {
+	min-height: 490px;
+	background: url(../images/red_packet_two_TKFZ3.png) 90px 110px no-repeat;
+}
+.perfect-info-box .right-box.packet-bg-TKFZ5 {
+	min-height: 490px;
+	background: url(../images/red_packet_two_TKFZ5.png) 90px 110px no-repeat;
+}
+.perfect-info-box .right-box.packet-bg-TKSXK {
+	min-height: 490px;
+	background: url(../images/red_packet_two_TKSXK.png) 90px 110px no-repeat;
+}
+/*大都会保险红包背景*/
+.perfect-info-box .right-box.packet-bg-DDH4 {
+	min-height: 490px;
+	background: url(../images/red_packet_two_DDH4.png) 90px 110px no-repeat;
+}
+.perfect-info-box .right-box.packet-bg-DDH8 {
+	min-height: 490px;
+	background: url(../images/red_packet_two_DDH8.png) 90px 110px no-repeat;
+}
+.perfect-info-box .right-box.packet-bg-ZM {
+	min-height: 490px;
+	background: url(../images/red_packet_two_ZM.png) 90px 110px no-repeat;
+}
+/*合众保险红包背景*/
+.perfect-info-box .right-box.packet-bg-HZZ {
+	min-height: 490px;
+	background: url(../images/red_packet_two_HZZ.png) 90px 110px no-repeat;
+}
+
+/*底部*/
+.footer p {
+	line-height: 20px;
+	font-size: 12px;
+	color: #c7c7c7;
+	text-align: center;
+}
+/*活动说明*/
+.explain-mask {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	opacity: 0.5;
+	filter:Alpha(opacity=50);
+	display: none;
+}
+.activity-explain,.user-sevice-agreement-popup {
+	position: absolute;
+	top: 330px;
+	left: 50%;
+	margin-left: -300px;
+	width: 600px;
+	display: none;
+}
+.activity-explain h3.title,.user-sevice-agreement-popup h3.title {
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	background-color: #ea4646;
+	font-size: 24px;
+	color: #fff;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
+.activity-explain h3.title a.close-btn,.user-sevice-agreement-popup h3.title a.close-btn-s{
+	width: 32px;
+	height: 32px;
+	background: url(../images/close_ico.png) center no-repeat;
+}
+.activity-explain .explain-msg,.user-sevice-agreement-popup .user-items {
+	background:#fff;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+.user-sevice-agreement-popup .user-items{
+	overflow-y:scroll;
+	height:400px;
+}
+.activity-explain .explain-msg h3,.user-sevice-agreement-popup h3 {
+	font-size: 22px;
+	color: #ff8400;
+}
+.activity-explain .explain-msg p ,.user-sevice-agreement-popup p{
+	font-size: 12px;
+	line-height: 20px;
+	color: #9b9b9b;
+}

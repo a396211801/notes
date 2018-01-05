@@ -1,0 +1,360 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+}
+html,body{
+    width: 100%;
+    height:100%;
+}
+.bg_bodys{
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fb9f0d;
+}
+.body {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    max-width: 800px;
+    display: flex;
+    flex-direction:column;
+    background: url("../img/bg_01.png") no-repeat top;
+    background-size: 100%;
+    margin: 0 auto;
+}
+input{
+    outline: none;
+    background: #ffffff;
+    border:1px solid #cccccc;
+    -webkit-border-radius:0.4rem;
+    -moz-border-radius:0.4rem;
+    border-radius:0.4rem;
+    line-height:2.4rem;
+    font-size:0.8rem;
+    -webkit-appearance:none;
+    color: #707070;
+}
+.popup{
+    width: 100%;
+    flex:1;
+    padding-top:12.6rem
+}
+.form_info{
+    width: 16rem;
+    padding:0.4rem;
+    background: #ffffff;
+    margin:0 auto  0.1rem auto;
+    border-radius: 0.6rem;
+
+}
+.form_info input{
+    width: 100%;
+    padding-left:0.8rem;
+    margin-top: 0.5rem;
+    font-weight: 500;
+    margin-bottom: 0.1rem;
+}
+.info_item{
+    overflow: hidden;
+}
+#yzm{
+    width: 100%;
+}
+.yzm_click{
+    width: 40%;
+    float: right;
+    line-height: 1.4rem;
+    font-size: 0.8rem;
+    margin-top: -2rem;
+    border-left: 1px solid #cccccc;
+    z-index: 10;
+    position: relative;
+    color: #ffc000;
+}
+.btn{
+    width: 12.5rem;
+    line-height: 2.2rem;
+    text-align: center;
+    font-size:1rem;
+    background: #ffc000;
+    vertical-align: middle;
+    color: #ffffff;;
+    margin:0.75rem auto;
+    border-radius: 1.1rem;
+}
+.btn_true{
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background: url("../img/true.png") no-repeat center center;
+    background-size: 100% 100%;
+    position: relative;
+    top: 0.15rem;
+}
+.jkw_true{
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background: url("../img/123.png") no-repeat center center;
+    background-size: 100% 100%;
+    position: relative;
+    top: 0.2rem;
+}
+.jkw_btn{
+    width: 12.5rem;
+    line-height: 2.2rem;
+    text-align: center;
+    font-size:0.6rem;
+    vertical-align: middle;
+    margin:0.6rem auto;
+    border-radius: 1.1rem;
+}
+.activity{
+    height: 14.7rem;
+    width: 100%;
+    background: url(../img/bottom_01.png) no-repeat top;
+    background-size: 100%;
+    margin-top: 1.7rem;
+    padding-top: 6.2rem;
+    text-align: left;
+}
+.color_red{
+    color: #ff400d;
+}
+.activity_item{
+    text-align: justify;
+    font-size: 0.7rem;
+    color: #111;
+    padding:0 1rem;
+    line-height: 1.2rem;
+}
+.activity_notice{
+    text-align: center;
+    line-height: 1.2rem;
+    margin: 0.7rem 0;
+    font-size:0.7rem;
+}
+.info_yzm{
+    position: relative;
+}
+
+.info_item .gain_yzm{
+    width: 5rem;
+    position: absolute;
+    top: 0.8rem;
+    right: 5px;
+    background: transparent;
+    color: #ffc000;
+    border-left: 1px solid #cccccc;
+    line-height: 1.8rem;
+}
+/*-----------------------------------第二版------------------------------*/
+.bodys{
+    width: 100%;
+    height: 100%;
+    max-width: 800px;
+    background: #f1d06b;
+    padding-top: 0.75rem;
+    margin:0 auto;
+}
+.body_bg{
+    background: #f1d06b;
+}
+.jkw_top{
+    height: 15rem;
+    background: url("../img/meizi_02.png") no-repeat top center;
+    background-size:17.25rem;
+    position: relative;
+}
+.jkw_title{
+    color:#cc3b12;
+    font-size:0.6rem;
+    line-height: 1.6rem;
+}
+.jkw_num{
+    position: absolute;
+    bottom: 3rem;
+    width: 11.5rem;
+    background: #f9f600;
+    border-radius: 0.6rem;
+    font-family: '黑体';
+    font-weight: 600;
+    padding: 0 0.4rem;
+    right: 2rem;
+    text-align: center;
+}
+.jkw_number{
+    display: inline-block;
+    width: 0.6rem;
+    height: 0.8rem;
+    background:#cc3b12 ;
+    color: #ffffff;
+    margin: -0.2rem 0.1rem;
+    font-size:0.6rem;
+    text-align: center;
+    padding-top:0.1rem;
+    line-height: 0.6rem;
+}
+.jkw_info{
+    margin: -2.6rem 0.7rem 0 0.7rem;
+    background: #ffffff;
+    padding: 0.7rem;
+    border-radius: 0.25rem;
+    position: relative;
+}
+.jkw_info_item{
+    margin-top: 0.6rem;
+    display: flex;
+}
+.jkw_info input{
+    flex:1;
+    -webkit-border-radius:0.1rem;
+    -moz-border-radius:0.1rem;
+    border-radius:0.1rem;
+    border:1px solid #acacac;
+    padding-left: 0.8rem;
+    font-size:0.75rem;
+}
+.gain_yzm{
+    line-height: 2.4rem;
+    background: #ec6800;
+    margin-left: 0.4rem;
+    font-size:0.75rem;
+    color: #ffffff;
+    padding:0 0.4rem;
+    -webkit-border-radius:0.1rem;
+    -moz-border-radius:0.1rem;
+    border-radius:0.1rem;
+}
+.step{
+    width: 16rem;
+    margin:1rem auto;
+}
+.bottom_info{
+    height: 3.3rem;
+    background: url(../img/boliang.png) no-repeat top left;
+    background-size: 100%;
+    font-size: 0.6rem;
+    line-height: 4.9rem;
+    text-align: center;
+}
+.btn_submit{
+    width: 14.3rem;
+    height: 2rem;
+    margin: 0.5rem auto;
+    background: #ec6800;
+    -webkit-border-radius:0.25rem;
+    -moz-border-radius:0.25rem;
+    border-radius:0.25rem;
+    text-align: center;
+    color: #ffffff;
+    line-height: 2rem;
+}
+.hint{
+    position: fixed;
+    top:10rem;
+    left: 4.5rem;
+    width: 9rem;
+    height: 2.2rem;
+    line-height: 2.2rem;
+    text-align: center;
+    background: rgba(45, 45, 45, 0.71);
+    border-radius: 0.25rem;
+    color: #ffffff;
+    margin: 0 auto;
+    display: none;
+}
+.a-fadein{
+    display: block;
+    -webkit-animation:fadein 1s;
+    -moz-animation:fadein 1s;
+    -ms-animation:fadein 1s;
+    animation:fadein 1s;
+
+}
+@-webkit-keyframes fadein{
+    0%{opacity: 1}
+    100%{opacity: 0}
+}
+@-moz-keyframes fadein{
+    0%{opacity: 1}
+    100%{opacity: 0}
+}
+@-ms-keyframes fadein{
+    0%{opacity: 1}
+    100%{opacity: 0}
+}
+@keyframes fadein{
+    0%{opacity: 1}
+    100%{opacity: 0}
+}
+.register_success{
+    position:fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    background: rgba(51, 51, 51, 0.81);
+    display: none;
+}
+.register_success>div{
+    width: 100%;
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.register_success img{
+    width: 10rem;
+    margin: 0 auto;
+    display: block;
+}
+.close{
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
+    right: 4.3rem;
+
+}
+#registerBefor .close{
+    width: 2.5rem;
+    height: 1.5rem;
+    position: absolute;
+    top: 8.4rem;
+    left: 8.6rem;
+}
+
+.fenqi_top{
+    height: 15rem;
+    background: url("../img/youshimeizi.png") no-repeat top center;
+    background-size:17.25rem;
+    position: relative;
+}
+.jiguang_top{
+    height: 15rem;
+    background: url("../img/meizi03.png") no-repeat top center;
+    background-size:17.25rem;
+    position: relative;
+}
+.jiguang_XLFY{
+    height: 15rem;
+    background: url("../img/meizi04.png") no-repeat top center;
+    background-size:17.25rem;
+    position: relative;
+}
+.bottom_info_XLFY{
+    line-height: 1.3rem;
+    padding-top: 0.6rem;
+}
+.jiguang_top_two{
+    height: 15rem;
+    background: url("../img/meizi05.png") no-repeat top center;
+    background-size:17.25rem;
+    position: relative;
+}

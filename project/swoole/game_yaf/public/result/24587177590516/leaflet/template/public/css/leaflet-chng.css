@@ -1,0 +1,18 @@
+@charset "utf-8";
+body, html, div, blockquote, img, label, p, h1, h2, h3, h4, h5, h6, pre, ul, ol,
+li, dl, dt, dd, form, a, input, th, td,header,footer,section{margin:0;padding:0;list-style:none;text-decoration:none;outline:none;}
+body{font-family:"微软雅黑";}
+html{font-size:20px;}
+img{width:100%;}
+.wrap{width:16rem;margin:0 auto;}
+.clearfix:after{content:"";display:block;clear:both;visibility:hidden;line-height:0;height:0;}
+/**/
+.banner{height:22.025rem;background: url(../image/leaflet-chng/banner.jpg) no-repeat;background-size:100% 100%;overflow: hidden;}
+.bg1{height:20.575rem;background: url(../image/leaflet-chng/bg1.jpg) no-repeat;background-size:100% 100%;overflow: hidden;}
+.btn1{display:block;margin:1.32rem 0 0 1.8rem;width:10.4rem;height:2.4rem;line-height:2.4rem;text-align:center;border:0;background-color:#E50304;border-radius: 20px;color:#fee900;font-size:1.125rem;}
+.bg1 span{display:block;position:relative;top:-2rem;left:12rem;width:3.325rem;height:2.45rem;background: url(../image/leaflet-chng/shou.png) no-repeat;}
+.btn2{display:block;margin:2.9rem 0 0 1.8rem;width:10.4rem;height:2.4rem;line-height:2.4rem;text-align:center;border:0;background-color:#E50304;border-radius: 20px;color:#fee900;font-size:1.125rem;}
+.bg3 span{display:block;position:relative;top:-2rem;left:12rem;width:3.325rem;height:2.45rem;background: url(../image/leaflet-chng/shou.png) no-repeat;}
+.bg2{height:18.625rem;background: url(../image/leaflet-chng/bg2.jpg) no-repeat;background-size:100% 100%;}
+.bg3{height:7.575rem;background: url(../image/leaflet-chng/bg3.jpg) no-repeat;background-size:100% 100%;overflow: hidden;}
+.foot{text-align: center;font-size:0.35rem;color:#fff;padding:0.5rem 0;background-color:#5c1900;}

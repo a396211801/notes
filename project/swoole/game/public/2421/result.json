@@ -1,0 +1,32 @@
+{
+  "code": "0000000",
+  "desc": "成功",
+  "data": {
+    "result": 2,
+    "activityId": 1792,
+    "orderId": "24154914650516",
+    "lottery": {
+      "st_info_dpm_title_click": "{\"dpm\":\"31697.4.7.0\",\"activityId\":1792,\"orderId\":\"taw-24154914650516\",\"consumerId\":1535109636,\"domain\":\"//embedlog.duiba.com.cn\",\"appId\":31697,\"domain4Web\":\"//activity.tuia.cn\",\"device_type\":\"tuia\",\"materialId\":9432,\"url\":\"/activity/showLog\",\"advertId\":8941,\"dcm\":\"104.8941.0100002.9432\"}",
+      "androidDownloadUrl": "//activity.tuia.cn/activity/redirect?url=http%3A%2F%2Fwww.100alpha.com%2Factivity_mgb%2Ftuiaddcpc1&orderId=taw-24154914650516&dcm=104.8941.0100002.9432&dpm=31697.4.1.0&activityId=1792&device_type=tuia",
+      "link": "//activity.tuia.cn/activity/indexRecord?vmName=detail&orderId=24154914650516&dpm=31697.4.3.0&dcm=104.8941.0100002.9432",
+      "useBtnText": "免费领取",
+      "title": "免费领100元滴滴红包",
+      "type": "lucky",
+      "openUrl": "",
+      "imgurl": "//yun.tuia.cn/tuia/img/m35qqm56f3.jpg",
+      "st_info_dpm_exposure": "{\"dpm\":\"31697.4.1.0\",\"activityId\":1792,\"orderId\":\"taw-24154914650516\",\"consumerId\":1535109636,\"domain\":\"//embedlog.duiba.com.cn\",\"appId\":31697,\"domain4Web\":\"//activity.tuia.cn\",\"device_type\":\"tuia\",\"materialId\":9432,\"url\":\"/activity/showLog\",\"advertId\":8941,\"dcm\":\"104.8941.0100002.9432\"}",
+      "showUse": true,
+      "linkTo": 0,
+      "iosDownloadUrl": "//activity.tuia.cn/activity/redirect?url=http%3A%2F%2Fwww.100alpha.com%2Factivity_mgb%2Ftuiaddcpc1&orderId=taw-24154914650516&dcm=104.8941.0100002.9432&dpm=31697.4.1.0&activityId=1792&device_type=tuia",
+      "tip": "【限25-50岁领取】蘑菇保携手滴滴出行送出行好礼，免费领取100元滴滴红包，还有机会获取最高100万的免费出行保障！",
+      "id": 10858,
+      "isDownloadUrl": true,
+      "st_info_dpm_btn_close": "{\"dpm\":\"31697.4.4.0\",\"activityId\":1792,\"orderId\":\"taw-24154914650516\",\"consumerId\":1535109636,\"domain\":\"//embedlog.duiba.com.cn\",\"appId\":31697,\"domain4Web\":\"//activity.tuia.cn\",\"device_type\":\"tuia\",\"materialId\":9432,\"url\":\"/statistics/click\",\"advertId\":8941,\"dcm\":\"104.8941.0100002.9432\"}",
+      "st_info_dpm_img_click": "{\"dpm\":\"31697.4.5.0\",\"activityId\":1792,\"orderId\":\"taw-24154914650516\",\"consumerId\":1535109636,\"domain\":\"//embedlog.duiba.com.cn\",\"appId\":31697,\"domain4Web\":\"//activity.tuia.cn\",\"device_type\":\"tuia\",\"materialId\":9432,\"url\":\"/statistics/click\",\"advertId\":8941,\"dcm\":\"104.8941.0100002.9432\"}",
+      "st_info_dpm_btn_get": "{\"dpm\":\"31697.4.6.0\",\"activityId\":1792,\"orderId\":\"taw-24154914650516\",\"consumerId\":1535109636,\"domain\":\"//embedlog.duiba.com.cn\",\"appId\":31697,\"domain4Web\":\"//activity.tuia.cn\",\"device_type\":\"tuia\",\"materialId\":9432,\"url\":\"/statistics/click\",\"advertId\":8941,\"dcm\":\"104.8941.0100002.9432\"}",
+      "validate": "2017-12-31"
+    },
+    "status": "success"
+  },
+  "success": true
+}

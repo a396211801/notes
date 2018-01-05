@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<!-- saved from url=(0295)http://activity.aaqos.cn/activity/index?id=4874&slotId=5951&login=normal&appKey=3nAzSQWmcmrWkaRSgJbb68n12X5h&deviceId=329c3a20-bc23-4472-8e10-fbc7940e15c8&dsm=1.5951.0.0&tenter=SOW&tck_rid_6c8=0a19ad8ajaxc1yvx-103454109&tck_loc_c5d=tactivity-4874&dcm=401.5951.0.0&&tenter=SOW&tck_userId_674=null -->
+<html data-dpr="1" style="font-size: 111.875px;">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script id="_1513151534532_9112" src="/lpt/pan1002/index/detect.json"></script>
+
+    <link rel="dns-prefetch" href="http://yun.aaqos.cn/">
+    <link rel="dns-prefetch" href="http://yun.tuisnake.com/">
+    <link rel="shortcut icon" type="image/x-icon" href="http://yun.aaqos.cn/babi/babi.ico">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="format-detection" content="telephone=no">
+    <title>抽奖马上送话费</title>
+    <script type="text/javascript" async="" src="/lpt/pan1002/index/fm.js"></script>
+    <script>!function (e, i) {
+        var t = e.documentElement, n = navigator.userAgent.match(/iphone|ipod|ipad/gi),
+            a = n ? Math.min(i.devicePixelRatio, 3) : 1,
+            m = "orientationchange" in window ? "orientationchange" : "resize";
+        t.dataset.dpr = a;
+        for (var d, l, c = !1, o = e.getElementsByTagName("meta"), r = 0; r < o.length; r++) l = o[r], "viewport" == l.name && (c = !0, d = l);
+        if (c) d.content = "width=device-width,initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0,user-scalable=no"; else {
+            var o = e.createElement("meta");
+            o.name = "viewport", o.content = "width=device-width,initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0,user-scalable=no", t.firstElementChild.appendChild(o)
+        }
+        var s = function () {
+            var e = t.clientWidth;
+            e / a > 640 && (e = 640 * a), window.remScale = e / 640, t.style.fontSize = 200 * (e / 640) + "px"
+        };
+        s(), e.addEventListener && i.addEventListener(m, s, !1)
+    }(document, window);</script>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0,user-scalable=no">
+
+    <link rel="stylesheet" href="/lpt/pan1002/index/actBase_201712040000.css">
+    <script type="text/javascript">
+        ;(function () {
+            if (!/eruda=true/.test(window.location.href)) return;
+            var oHead = document.head;
+            var oScript = document.createElement('script');
+            oScript.type = "text/javascript";
+            oScript.src = "//yun.aaqos.cn/h5-mami/optimize/eruda.min.js";
+            oHead.appendChild(oScript);
+            oScript.onload = function () {
+                eruda.init()
+            }
+        })();
+    </script>
+
+<script type="text/javascript">
+    ;
+    (function (window) {
+        var cookie = {
+            set: function (name, value, day) {
+                var Days = day | 1;
+                var exp = new Date();
+                exp.setTime(exp.getTime() + Days * 24 * 60 * 60 * 1000);
+                document.cookie = name + "=" + escape(value) + ";expires=" + exp.toGMTString()+";path=/";
+            },
+            get: function (name) {
+                var arr, reg = new RegExp("(^| )" + name + "=([^;]*)(;|$)");
+                if (arr = document.cookie.match(reg))
+                    return unescape(arr[2]);
+                else
+                    return null;
+            },
+            del: function (name) {
+                var exp = new Date();
+                exp.setTime(exp.getTime() - 1);
+                var val = this.get(name);
+                if (val != null)
+                    document.cookie = name + "=" + val + ";expires=" + exp.toGMTString();
+            }
+        };
+        window._cookie = cookie;
+    })(window)
+
+    function GetQueryString(name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null)return unescape(r[2]);
+        return null;
+    }
+
+    function guid() {
+        return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+            var r = Math.random()*16|0, v = c == 'x' ? r : (r&0x3|0x8);
+            return v.toString(16);
+        });
+    }
+
+    if (!_cookie.get('random')) {
+        _cookie.set('random', guid())
+    }
+
+    var this_random = _cookie.get('random')
+    var this_id = GetQueryString('id')
+    var this_awid = GetQueryString('awid')
+
+    var storage=window.localStorage;
+    storage.setItem("id",this_id);
+    storage.setItem("awid",this_awid);
+
+    var this_aid = ''
+    function setPosition(type, url) {
+        var send_data = {
+            id: this_id, 
+            awid: this_awid, 
+            random: this_random, 
+            position: type,
+        }
+        if(this_aid && type != 1) {
+            send_data.aid = this_aid
+        }
+        $.ajax({
+            url: '/ts/Activity/clickCount',
+            dataType: 'json',
+            type: 'post',
+            data: send_data,
+            success: function () {
+                if (url) {
+                    window.location.href = url
+                }
+            }
+        })
+    }
+    
+
+</script>
+    <link rel="stylesheet" type="text/css" href="/lpt/pan1002/index/index_201712051920.css">
+    <style>.rule {
+        background-image: url(//yun.tuisnake.com/h5/activity/turntable_circle/images/rule.png?x-oss-process=image/format,webp) !important;
+    }
+
+    #db-content {
+        background-image: url(//yun.aaqos.cn/mami-media/img/ty8i59l2eh.jpg?x-oss-process=image/format,webp) !important;
+    }
+
+    body {
+        background-color: #fdecc0 !important;
+    }
+
+    .record {
+        background-image: url(//yun.aaqos.cn/mami-media/img/kw8yxey5cx.png?x-oss-process=image/format,webp) !important;
+    }
+
+    .apple {
+        background-color: #fdecc0 !important;
+    }
+
+    .apple {
+        color: #fff !important;
+    }
+
+    #circle {
+        background-image: url(//yun.aaqos.cn/mami-media/img/mi6glq9e7w.png?x-oss-process=image/format,webp) !important;
+    }
+
+    .radius-group {
+        background-color: #f0c510 !important;
+    }
+
+    .point {
+        background-image: url(//yun.aaqos.cn/mami-media/img/8cjw9qx2ib.png?x-oss-process=image/format,webp) !important;
+    }
+
+    #start {
+        background-image: url(//yun.aaqos.cn/mami-media/img/29ytetrk77.png?x-oss-process=image/format,webp) !important;
+    }
+
+    #start:active {
+        background-image: url(//yun.aaqos.cn/mami-media/img/ov7qjpx7a4.png?x-oss-process=image/format,webp) !important;
+    }
+
+    #start.disabled {
+        background-image: url(//yun.aaqos.cn/mami-media/img/i0c8kby8go.png?x-oss-process=image/format,webp) !important;
+    }</style>
+    <style>.needCredits p {
+        box-shadow: 0 0 0.05rem rgba(255, 255, 255, 0.75), 0 0 0.05rem rgba(255, 255, 255, 0.75) inset;
+        -webkit-box-shadow: 0 0 0.05rem rgba(255, 255, 255, 0.75), 0 0 0.05rem rgba(255, 255, 255, 0.75) inset;
+        text-shadow: 0 0 0.05rem #ffffff;
+        color: #ffffff;
+        border-color: #ffffff;
+    }</style>
+    <script charset="utf-8" async="" src="/lpt/pan1002/index/common_201712081309.js"></script>
+    <link rel="stylesheet" href="/lpt/pan1002/index/common_201712061925.css">
+    <style>.rule-modal .rule-modal-dialog section .probability .nav i {
+        border-top-color: #fff;
+        border-left-color: #fff;
+    }</style>
+    <style>.rule-modal .rule-modal-dialog {
+        background-color: #4ba8fa !important;
+    }
+
+    .rule-modal .rule-modal-dialog section .probability {
+        background-color: #4ba8fa !important;
+    }
+
+    .rule-modal .rule-modal-dialog header span, .rule-modal .rule-modal-dialog section .description {
+        color: #fff !important;
+    }
+
+    .rule-modal .rule-modal-dialog header i {
+        background-color: #fff !important;
+    }
+
+    .rule-modal .rule-modal-dialog .close {
+        color: #fff !important;
+    }
+
+    .rule-modal .rule-modal-dialog section .probability .nav {
+        background-color: #ffdf00 !important;
+    }
+
+    .rule-modal .rule-modal-dialog section .probability .nav span {
+        color: #fff !important;
+    }
+
+    .rule-modal .rule-modal-dialog section .probability.active .text {
+        color: #fff !important;
+    }
+    
+    .coupon-modal-showPrize .coupon-modal-showPrize-dialog .modal-body {
+        position: absolute  !important;
+    }
+    </style>
+</head>
+
+
+<body>
+<div style="position: absolute; bottom: 0px;">
+    <object type="application/x-shockwave-flash" wmode="transparent" data="/lpt/pan1002/index/clear.swf" width="1"
+            height="1" id="fmFlash" style="visibility:hidden;">
+        <param name="movie" value="http://static.fraudmetrix.cn/clear.swf?v1=2">
+        <param name="allowScriptAccess" value="always">
+        <param name="flashVars"
+               value="sessionId=0a19ad8ajaxc1yvx-103454109&amp;partnerCode=duiba&amp;serviceUrl=fpflash.fraudmetrix.cn">
+    </object>
+</div>
+<div id="db-content" style="display: block;">
+    <div class="record" onclick="setPosition(4, '/put/prize/list/')"></div>
+    <div class="banner">
+        <img class="theme" src="/lpt/pan1002/index/52v27oaj76.png">
+        <div class="rule"></div>
+    </div>
+    <div class="needCredits"><p>今日免费： 7次</p></div>
+    <div class="core">
+        <div class="core-overflow">
+            <div class="radius-group"></div>
+            <div class="radius-bg default"></div>
+            <div id="circle" style="transform: rotate3d(0, 0, 1, 96deg);">
+                <div class="circle-box" id="circle-box">
+                    <!--<div class="prize" data-index="0" data-id="30924" data-type="thanks">-->
+                        <!--<div class="prize-dialog"><p>谢谢参与</p><img src="/lpt/pan1002/index/wyw2y96kk8.png" alt=""></div>-->
+                    <!--</div>-->
+                    <!--<div class="prize" data-index="1" data-id="30925" data-type="physical">-->
+                        <!--<div class="prize-dialog"><p>6G流量包</p><img src="/lpt/pan1002/index/mzw8vln5jm.png" alt=""></div>-->
+                    <!--</div>-->
+                    <!--<div class="prize" data-index="2" data-id="30926" data-type="physical">-->
+                        <!--<div class="prize-dialog"><p>200元话费</p><img src="/lpt/pan1002/index/7q76yq2vfo.png" alt="">-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="prize" data-index="3" data-id="30927" data-type="lucky">-->
+                        <!--<div class="prize-dialog"><p>幸运福袋</p><img src="/lpt/pan1002/index/t5z8cbbkzm.png" alt=""></div>-->
+                    <!--</div>-->
+                    <!--<div class="prize" data-index="4" data-id="30928" data-type="physical">-->
+                        <!--<div class="prize-dialog"><p>2G流量包</p><img src="/lpt/pan1002/index/xn21ssirta.png" alt=""></div>-->
+                    <!--</div>-->
+                    <!--<div class="prize" data-index="5" data-id="30929" data-type="physical">-->
+                        <!--<div class="prize-dialog"><p>500元话费</p><img src="/lpt/pan1002/index/uact04uoon.png" alt="">-->
+                        <!--</div>-->
+                    <!--</div>-->
+                </div>
+            </div>
+            <div id="start"></div>
+        </div>
+        <div class="point"></div>
+    </div>
+</div>
+
+<!-- 首屏加载公用js、css -->
+<script type="text/javascript" src="/lpt/pan1002/index/actBase_201712051124.js"></script>
+
+<!-- 延迟加载公用js、css -->
+<script type="text/javascript">
+    var common_js = '//yun.aaqos.cn/h5-mami/common/common_201712081309.js';
+
+    var common_css = '//yun.aaqos.cn/h5-mami/common/common_201712061925.css';
+</script>
+
+<!-- 活动工具页面初始化> -->
+<script type="text/javascript">
+    window.mengmaClose = true;
+    var CFG = {
+        host: '//yun.aaqos.cn', //配置域名
+        activityId: '4874', //活动id
+        activityType: '2',  //研究
+        slotId: '5951',  //广告位id
+        preview: false,  //预览
+        isShowBuoy: false,  //是否展示浮标
+        isShowRecommend: true,  //是否展示推荐弹层
+        isShowNew: false, //是否显示abtest新弹层
+        tick: '', //猛犸tick
+        consumerId: '2951435362',
+        appId: '39972',
+        couponSkinId: '18', //弹层皮肤id
+        skinName: 'turnCircle_1', // 活动皮肤名称
+        isShowTiming: false,
+        isShowRsp: true,
+        isPriority: false,
+        kefuType: '0'
+    };
+
+    function getActivityToken(getordeid, callback) {
+        $.ajax({
+            url: '/ts/activity/getToken',
+            type: 'post',
+            dataType: 'json',
+            data: {
+                timestamp: new Date().getTime(),
+                id: this_id,
+                awid: this_awid,
+                random: this_random
+            },
+            success: function (res) {
+                if (res.success) {
+                    eval(res.token);
+                    var key = '57d5e55a';
+                    var _data = {
+                        data: {
+                            token: window[key]
+                        }
+                    };
+
+                    getordeid && getordeid(_data);
+                } else {
+                    callback && callback('systemError', {message: res.message});
+                }
+            },
+            error: function () {
+                var _data = {
+                    data: {
+                        token: null
+                    }
+                };
+                getordeid && getordeid(_data);
+            }
+        });
+    }
+</script>
+<script type="text/javascript" src="/lpt/pan1002/index/index_201712051920.js"></script>
+
+<div class="rule-modal" style="display: none;">
+    <div class="rule-modal-dialog">
+        <header><i></i><span>活动说明</span><i></i></header>
+        <section class="scroll-box">
+            <div>
+                <div class="description rule-3">
+                    <div class="description-scroller"><p>话费流量不够用啦？快来参加抽奖，送话费流量啦~</p>
+                        <p>活动说明：参与活动即有机会获得幸运奖，每天7次免费抽奖机会。此活动为概率中奖，奖品数量有限，祝好运。</p>
+                        <p>惊喜一：500元话费</p>
+                        <p>惊喜二：200元话费</p>
+                        <p>惊喜三：6G全国流量</p>
+                        <p>惊喜四：2G全国流量</p>
+                        <p>惊喜五：幸运福袋</p>
+                        <p>－－－－－－－－－－－－－－－－<br></p>
+                        <p>重要声明</p>
+                        <p>1、实物类奖品将在活动结束后5-10个工作日安排发货，请耐心等待</p>
+                        <p>2、优惠券类奖品的使用规则详见每个优惠券的介绍页</p>
+                        <p>3、请兑换后仔细阅读使用流程，如有疑问，可直接联系客服QQ：706513568（工作日9:00至18:00）</p>
+                        <p>4、通过非法途径获得奖品的，主办方有权不提供奖品</p></div>
+                </div>
+                <div class="probability rule-3">
+                    <div class="nav"><span>更多概率说明</span><i></i></div>
+                    <div class="text">
+                        <div class="probability-wrapper rule-3">
+                            <div class="probability-scroller"><p>惊喜一：500元话费，共5份，中奖概率为0.01%</p>
+                                <p>惊喜二：200元话费，共10份，中奖概率为0.02%</p>
+                                <p>惊喜三：6G全国流量，共25份，中奖概率为0.04%</p>
+                                <p>惊喜四：2G全国流量，共100份，中奖概率为0.1%</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="close"></div>
+    </div>
+</div>
+<div class="DB_guide" style="left: 1.69rem; top: 2.925rem; display: block;"><span class="DB_G_circle"></span><span
+        class="DB_G_hand"></span></div>
+<div class="modal-group">
+    <link rel="stylesheet" href="/lpt/pan1002/index/index_201712131534.css">
+    <script type="text/javascript">
+        var oHead = document.querySelector('.modal-group');
+        var oScript = document.createElement('script');
+        oScript.type = "text/javascript";
+        oScript.src = "/lpt/pan1002/index/index_201712131534.js";
+        oHead.appendChild(oScript);
+    </script>
+    <script type="text/javascript" src="/lpt/pan1002/index/index_201712131534.js"></script>
+    <link rel="stylesheet" href="/lpt/pan1002/index/index_201712131534.css">
+    <script type="text/javascript">
+        var oHead = document.querySelector('.modal-group');
+        var oScript = document.createElement('script');
+        oScript.type = "text/javascript";
+        oScript.src = "/lpt/pan1002/index/index_201712131534.js";
+        oHead.appendChild(oScript);
+    </script>
+    <script type="text/javascript" src="/lpt/pan1002/index/index_201712131534.js"></script>
+    <link rel="stylesheet" href="/lpt/pan1002/index/index_201709062000.css">
+    <script type="text/javascript">
+        var oHead = document.querySelector('.modal-group');
+        var oScript = document.createElement('script');
+        oScript.type = "text/javascript";
+        oScript.src = "/lpt/pan1002/index/index_201710301800.js";
+        oHead.appendChild(oScript);
+    </script>
+    <script type="text/javascript" src="/lpt/pan1002/index/index_201710301800.js"></script>
+    <link rel="stylesheet" href="/lpt/pan1002/index/index_201710230000.css">
+    <script type="text/javascript">
+        var oHead = document.querySelector('.modal-group');
+        var oScript = document.createElement('script');
+        oScript.type = "text/javascript";
+        oScript.src = "/lpt/pan1002/index/index_201711160000.js";
+        oHead.appendChild(oScript);
+    </script>
+    <script type="text/javascript" src="/lpt/pan1002/index/index_201711160000.js"></script>
+    <link rel="stylesheet" href="/lpt/pan1002/index/index_201711161123.css">
+    <script type="text/javascript">
+        var oHead = document.querySelector('.modal-group');
+        var oScript = document.createElement('script');
+        oScript.type = "text/javascript";
+        oScript.src = "/lpt/pan1002/index/index_201712050000.js";
+        oHead.appendChild(oScript);
+    </script>
+    <script type="text/javascript" src="/lpt/pan1002/index/index_201712050000.js"></script>
+    <link rel="stylesheet" href="/lpt/pan1002/index/index_201712041039.css">
+    <script type="text/javascript">
+        var oHead = document.querySelector('.modal-group');
+        var oScript = document.createElement('script');
+        oScript.type = "text/javascript";
+        oScript.id = "couponScript";
+        oScript.src = "/lpt/pan1002/index/index_201712050001.js";
+        console.log(oScript);
+        oHead.appendChild(oScript);
+    </script>
+    <script type="text/javascript" id="couponScript" src="/lpt/pan1002/index/index_201712050001.js"></script>
+    <link rel="stylesheet" href="/lpt/pan1002/index/index_201711250000.css">
+    <script type="text/javascript">
+        var oHead = document.querySelector('.modal-group');
+        var oScript = document.createElement('script');
+        oScript.type = "text/javascript";
+        oScript.src = "/lpt/pan1002/index/index_201712050000.js";
+        oHead.appendChild(oScript);
+    </script>
+    <script type="text/javascript" src="/lpt/pan1002/index/index_201712050000.js(1)"></script>
+    <link rel="stylesheet" href="/lpt/pan1002/index/index_201711250000.css">
+    <script type="text/javascript">
+        var oHead = document.querySelector('.modal-group');
+        var oScript = document.createElement('script');
+        oScript.type = "text/javascript";
+        oScript.src = "/lpt/pan1002/index/index_201712050000.js";
+        oHead.appendChild(oScript);
+    </script>
+    <script type="text/javascript" src="/lpt/pan1002/index/index_201712050000.js(1)"></script>
+    <link rel="stylesheet" href="/lpt/pan1002/index/index_201709290000.css">
+    <script type="text/javascript">
+        var oHead = document.querySelector('.modal-group');
+        var oScript = document.createElement('script');
+        oScript.type = "text/javascript";
+        oScript.id = "couponScript";
+        oScript.src = "/lpt/pan1002/index/index_201711031000.js";
+        oHead.appendChild(oScript);
+    </script>
+    <script type="text/javascript" id="couponScript" src="/lpt/pan1002/index/index_201711031000.js"></script>
+    <script>
+        $('body').on('click', '#start', function() {
+            setPosition(1)
+        })
+        $('body').on('click', '.rule', function() {
+            setPosition(8)
+        })
+        $('body').on('click', '.J_gotoDetail, .J_btnCoupon', function () {
+            // var order_id = JSON.parse($(this).attr('db-click')).orderId.split('-')[1]
+            var send_data = {
+                id: this_id, 
+                awid: this_awid, 
+                random: this_random, 
+                position: 2,
+            }
+            if(this_aid) {
+                send_data.aid = this_aid
+            }
+            $.ajax({
+                url: '/ts/Activity/clickCount',
+                dataType: 'json',
+                type: 'post',
+                async:true,
+                data: send_data,
+                success: function () {
+                    if (url) {
+                        // window.location.href = url
+                    }
+                }
+            })
+
+            $.ajax({
+                url: '/ts/Activity/clickCount',
+                dataType: 'json',
+                type: 'post',
+                async:false,
+                data: {id: this_id, awid: this_awid, random: this_random, position: 2,},
+                success: function () {
+                    if (url) {
+                        // window.location.href = url
+                    }
+                }
+            })
+        })
+
+        $('body').on('click', '.recommend-li', function(e) {
+            if($(this).index() == 1) {
+                setPosition(6)
+            } else {
+                setPosition(7)
+            }
+        })
+
+        $(function() {
+            $.ajax({
+                url: '/ts/activity/vpCount',
+                dataType: 'json',
+                type: 'post',
+                data: {random: this_random, awid: this_awid, id: this_id,pos:1},
+                success: function () {}
+            })
+        })
+    </script>
+</div>
+</body>
+</html>

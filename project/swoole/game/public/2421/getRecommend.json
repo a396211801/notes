@@ -1,0 +1,23 @@
+{
+  "code": "0000000",
+  "desc": "成功",
+  "data": {
+    "block1": {
+      "title": "红包/会员送你叫外卖",
+      "bannerUrl": "//yun.tuia.cn/tuia-media/img/hisr2nembm.jpg",
+      "actUrl": "//activity.tuia.cn/activity/index?id=2061&slotId=2496&deviceId=bf32e009-d0d3-435c-bcea-4fc9ec2e84af&login=normal&appKey=3Y4PRKk2PjGqsGDsM1Ly985YGAtE&dpm=31697.36.1.1792"
+    },
+    "block2": {
+      "title": "捉红包，拿现金好礼",
+      "bannerUrl": "//yun.tuia.cn/tuia-media/img/h0pde3aj6h.jpg",
+      "actUrl": "//activity.tuia.cn/activity/index?id=2267&slotId=2496&deviceId=bf32e009-d0d3-435c-bcea-4fc9ec2e84af&login=normal&appKey=3Y4PRKk2PjGqsGDsM1Ly985YGAtE&dpm=31697.36.2.1792"
+    },
+    "stRecommendInfo": "{\"dpm\":\"31697.36.1.1792\",\"consumer_id\":1535109636,\"domain\":\"//embedlog.duiba.com.cn\",\"app_id\":31697}",
+    "block3": {
+      "title": null,
+      "bannerUrl": null,
+      "actUrl": "//activity.tuia.cn/actCenter/index?id=9&slotId=2496&deviceId=bf32e009-d0d3-435c-bcea-4fc9ec2e84af&login=normal&appKey=3Y4PRKk2PjGqsGDsM1Ly985YGAtE&dpm=31697.36.3.1792"
+    }
+  },
+  "success": true
+}

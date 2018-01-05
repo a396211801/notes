@@ -1,0 +1,28 @@
+{
+  "code": "0000000",
+  "desc": "成功",
+  "data": {
+    "title": "免费领100元滴滴红包",
+    "thumbnailPng": "//yun.tuia.cn/tuia/img/avygoch3i6.jpg",
+    "endValid": "2017-12-31",
+    "orderId": "24154914650516",
+    "remainDay": 144,
+    "statusTips": null,
+    "status": null,
+    "remainTime": null,
+    "bannerPng": "//yun.duiba.com.cn/tuia/img/m35qqm56f3.jpg",
+    "couponRemark": "<h3>蘑菇保携手滴滴出行送出行好礼，免费领取100元滴滴红包，还有机会获取最高100万的免费出行保障！助你便捷出行，平安出行</h3><h3>使用流程</h3><ol><li>兑换成功后，点击领取，进入领取页面</li><li>填写个人真实信息免费领取</li><li>保险公司通过短信通知您领取保险保单号</li><li>收到保险公司保单号短信，即承保生效</li></ol><h3>使用规则</h3><ul><li>每个用户仅限兑换使用一次</li><li>用户申请条件是25周岁到50岁周岁之间，同期没有领取过相同险种</li><li>承保成功的用户1~2天内会收到保单号的短信</li><li>请兑换后仔细阅读使用流程，若有疑问，可直接联系客服专线：400-080-6659或客服QQ：4000806659 （工作日9:30至18:30）</li></ul>",
+    "buttonText": "免费领取",
+    "codeContent": null,
+    "codePasswd": null,
+    "stmInfo": "{\"activityId\":1792,\"orderId\":\"taw-24154914650516\",\"consumerId\":1535109636,\"domain\":\"//embedlog.duiba.com.cn\",\"appId\":31697,\"domain4Web\":\"//activity.tuia.cn\",\"device_type\":\"tuia\",\"materialId\":9432,\"url\":\"/activity/showLog\",\"advertId\":8941,\"dcm\":\"104.8941.0.9432\"}",
+    "iosDownloadUrl": "//activity.tuia.cn/activity/redirect?url=http%3A%2F%2Fwww.100alpha.com%2Factivity_mgb%2Ftuiaddcpc1&orderId=taw-24154914650516&dcm=104.8941.0.9432&dpm=31697.4.1.0&activityId=1792&device_type=tuia",
+    "androidDownloadUrl": "//activity.tuia.cn/activity/redirect?url=http%3A%2F%2Fwww.100alpha.com%2Factivity_mgb%2Ftuiaddcpc1&orderId=taw-24154914650516&dcm=104.8941.0.9432&dpm=31697.4.1.0&activityId=1792&device_type=tuia",
+    "showUse": true,
+    "activityId": 1792,
+    "amount": null,
+    "alipayAccount": null,
+    "alipayName": null
+  },
+  "success": true
+}

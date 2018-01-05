@@ -1,0 +1,34 @@
+.pagination{
+	margin: 0 !important;
+}
+input[type=checkbox], input[type=radio] {
+    position: absolute;
+    margin-left: -20px;
+}
+.checkbox label{
+	width: 100px;
+}
+.form-horizontal .control-label{
+	font-weight: normal;
+}
+
+.layui-form-switch{
+	box-sizing: content-box;
+}
+.merge-cell>thead>tr>th{
+	vertical-align: middle;
+}
+.layui-form-switch{
+	margin-top: 0;
+}
+.no{
+	margin-bottom: 0;border: none;
+	box-shadow: none;
+}
+
+
+
+.layui-form-label {
+	box-sizing: content-box;
+	margin-bottom: 0;
+}

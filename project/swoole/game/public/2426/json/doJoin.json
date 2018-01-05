@@ -1,0 +1,13 @@
+{
+  "code": "0000000",
+  "desc": "成功",
+  "data": {
+    "limitTimes": 0,
+    "orderId": "26013600980148",
+    "success": true,
+    "isShowBuoy": false,
+    "message": "成功",
+    "limitType": 1
+  },
+  "success": true
+}

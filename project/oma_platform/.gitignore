@@ -1,0 +1,8 @@
+application/conf/config.ini
+public/uploads
+public/static
+public/index.php
+.idea
+.buildpath
+.project
+.settings

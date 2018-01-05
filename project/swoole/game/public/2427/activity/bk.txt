@@ -1,0 +1,15 @@
+{
+  "code": "0000000",
+  "desc": "成功",
+  "data": {
+    "limitTimes": 0,
+    "orderId": "26013600980148",
+    "success": true,
+    "isShowBuoy": false,
+    "message": "成功",
+    "limitType": 1
+  },
+  "success": true
+}
+
+{"code":"0100001","desc":"用户参与次数达到上限","data":null,"success":false}
